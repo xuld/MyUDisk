@@ -45,14 +45,98 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CodeArtEng.Controls\CommandLineBuilderDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CodeArtEng.Controls\CommandLineBuilderDialog.Designer.cs">
+      <DependentUpon>CommandLineBuilderDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\CommandLineHelper.cs" />
+    <Compile Include="CodeArtEng.Controls\DateTimeConverter2.cs" />
+    <Compile Include="CodeArtEng.Controls\FileExplorer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\FileExplorer.Designer.cs">
+      <DependentUpon>FileExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\FilePanel\FilePanelBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\FilePanel\FilePanelBase.Designer.cs">
+      <DependentUpon>FilePanelBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\FilePanel\FolderBrowsePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\FilePanel\OpenFilePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\FilePanel\SaveFilePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\HintedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\IFileExplorer.cs" />
+    <Compile Include="CodeArtEng.Controls\LabeledTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\LabeledTextBox.Designer.cs">
+      <DependentUpon>LabeledTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\MultiLineButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\MultiLineButton.Designer.cs">
+      <DependentUpon>MultiLineButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\Properties\Resources.Designer.cs" />
+    <Compile Include="CodeArtEng.Controls\StatusLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\StatusLabel.Designer.cs">
+      <DependentUpon>StatusLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeArtEng.Controls\TimePickerEditor.cs" />
+    <Compile Include="CodeArtEng.Controls\ToolStripMruList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CodeArtEng.Controls\CommandLineBuilderDialog.resx">
+      <DependentUpon>CommandLineBuilderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeArtEng.Controls\FileExplorer.resx">
+      <DependentUpon>FileExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeArtEng.Controls\FilePanel\FilePanelBase.resx">
+      <DependentUpon>FilePanelBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeArtEng.Controls\FilePanel\FolderBrowsePanel.resx">
+      <DependentUpon>FolderBrowsePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeArtEng.Controls\FilePanel\OpenFilePanel.resx">
+      <DependentUpon>OpenFilePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeArtEng.Controls\FilePanel\SaveFilePanel.resx">
+      <DependentUpon>SaveFilePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeArtEng.Controls\LabeledTextBox.resx">
+      <DependentUpon>LabeledTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeArtEng.Controls\MultiLineButton.resx">
+      <DependentUpon>MultiLineButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeArtEng.Controls\Properties\Resources.resx" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +146,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="CodeArtEng.Controls\FxCop - CodeArtEng.Controls.FxCop" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,6 +159,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CodeArtEng.Controls\CodeArtEng.Controls.csproj" />
+    <Content Include="CodeArtEng.Controls\Resources\GreenDot.png" />
+    <Content Include="CodeArtEng.Controls\Resources\GreyDot.png" />
+    <Content Include="CodeArtEng.Controls\Resources\OrangeDot.png" />
+    <Content Include="CodeArtEng.Controls\Resources\RedDot.png" />
+    <Content Include="CodeArtEng.Controls\Resources\YellowDot.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -23,12 +23,50 @@
         /// 使用代码编辑器修改此方法的内容。
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
+            this.explorer = new CodeArtEng.Controls.FileExplorer();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.SuspendLayout();
+            // 
+            // explorer
+            // 
+            this.explorer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.explorer.FileView = System.Windows.Forms.View.LargeIcon;
+            this.explorer.HideSystemFolder = true;
+            this.explorer.Location = new System.Drawing.Point(0, 24);
+            this.explorer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.explorer.Name = "explorer";
+            this.explorer.Size = new System.Drawing.Size(679, 454);
+            this.explorer.SplitterDistance = 25;
+            this.explorer.TabIndex = 0;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(679, 24);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(679, 478);
+            this.Controls.Add(this.explorer);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "MainForm";
+            this.Text = "我的 U 盘 - by xuld";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private CodeArtEng.Controls.FileExplorer explorer;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
 
